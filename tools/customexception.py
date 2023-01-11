@@ -13,4 +13,4 @@ class ExceptionWeather(Exception):
         if self.message:
             return 'Weather download exception, {0} '.format(self.message)
         else:
-            return 'ExceptionWeather has been raised'
+            return 'Exception Weather has been raised'
