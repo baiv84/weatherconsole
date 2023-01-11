@@ -9,7 +9,6 @@ class ExceptionWeather(Exception):
             self.message = None
 
     def __str__(self):
-        print('calling str')
         if self.message:
             return 'Weather download exception, {0} '.format(self.message)
         else:
