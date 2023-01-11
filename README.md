@@ -9,7 +9,9 @@
 
 Firstly, you have to install package `python3-venv` to work with python virual environment.
 
-Update packages on your system:
+Update packages on your system `!(it depends on your operating system)`
+
+in this document I use Ubuntu as my operating system. So run update:
 ```console
 $ sudo apt update
 ```
