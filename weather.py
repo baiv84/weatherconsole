@@ -4,17 +4,16 @@ from tools.printer import print_page
 
 
 # Internet links to weather resources
-cities = [
+CITIES = [
     'лондон',
     'шереметьево',
     'череповец',
 ]
 
-
 # Program entry point
 if __name__ == '__main__':
     # Perform page extractions
-    pages = [extract_page(city) for city in cities]
+    pages = [extract_page(city) for city in CITIES]
 
     # Print weather conditions  to Console
     for page in pages:

@@ -4,15 +4,20 @@ import requests
 
 def extract_page(city):
     """Get HTML response from page"""
+    # HTTP requests params
+    params = {
+        'nqmMT': '',
+        'lang': 'ru',
+    }
 
     # Generate link to get weather conditions over API service
-    link = 'https://wttr.in/%s?nqmMT&lang=ru' % (city)
+    link = 'https://wttr.in/%s' % (city)
 
     # Download page content for particular city
-    try:
-        response = requests.get(link)
-        page = response.text
-    except ConnectionError:
+    response = requests.get(link, params=params)
+    if response.status_code != requests.codes.ok:
         page = None
+    else:
+        page = response.text
 
     return page
