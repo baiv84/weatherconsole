@@ -43,7 +43,7 @@ As a result, you will see command line prompt like this:
 
 # Install dependencies
 
-In the virtual environment run comand:
+In the virtual environment run command:
 
 ```console
 (venv) weatherconsole $  pip install -r requirements.txt

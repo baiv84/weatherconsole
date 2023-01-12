@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from tools.customexception import ExceptionWeather
+from tools.customexception import WeatherException
 
 
 def print_page(page, method='echo'):
@@ -9,4 +9,4 @@ def print_page(page, method='echo'):
     if method == 'echo' and page is not None:
         print(page)
     else:
-        raise ExceptionWeather('We have weather download exception')
+        raise WeatherException('We have weather download exception')

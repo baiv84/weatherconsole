@@ -1,4 +1,4 @@
-class ExceptionWeather(Exception):
+class WeatherException(Exception):
     """Define class for custom weather exception"""
 
     def __init__(self, *args):
@@ -12,4 +12,4 @@ class ExceptionWeather(Exception):
         if self.message:
             return 'Weather download exception, {0} '.format(self.message)
         else:
-            return 'Exception Weather has been raised'
+            return 'Weather exception has been raised'

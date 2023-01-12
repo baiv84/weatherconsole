@@ -6,8 +6,12 @@ def extract_page(city):
     """Get HTML response from page"""
     # HTTP requests params
     params = {
-        'nqmMT': '',
-        'lang': 'ru',
+        'n': '',                        # Short output mode (only day/night)
+        'q': '',                        # Silent mode
+        'M': '',                        # Metric system
+        'T': '',                        # Disable terminal escapes (no colour)
+        '2': '',                        # Weather only for today + 1 day
+        'lang': 'ru',                   # Language - russian
     }
 
     # Generate link to get weather conditions over API service
